@@ -27,7 +27,7 @@ namespace PractisePrograms
         }
         public void showname()
         {
-            Console.WriteLine("Hello :" + Name);
+            Console.WriteLine("Hello Your name Is:" + Name);
             Console.WriteLine("Your Age is :" + Age);
         }
 

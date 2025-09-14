@@ -22,40 +22,9 @@ namespace PractisePrograms
         {
             // string cs = ConfigurationManager.ConnectionStrings
             // ["my_connection"].ConnectionString;
-
-            //Two Matrix addition
-            List<EmployeeModel> empList = new List<EmployeeModel>();
-            EmployeeModel empModel= new EmployeeModel();
-            empModel.Id = 1;
-            empModel.Name = "Nitin";
-            empModel.Age = 23;
-            empList.Add(empModel);
-
-            DataTable dt=new DataTable();
-            dt.Columns.Add("Id",typeof(int));
-            dt.Columns.Add("Name",typeof(string));
-            dt.Columns.Add("Age",typeof(int));
-            foreach (var item in empList)
-            {
-                dt.Rows.Add(item.Id,item.Name,item.Age);
-            }
-            foreach (DataRow dr in dt.Rows)
-            {
-                Console.WriteLine(dr[0] +" "+ dr[1] +" "+ dr[2]);
-            }
-
-            Console.ReadKey();
+            Console.WriteLine("Hello world");
         }
-
     }
-    public class EmployeeModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-    }
-
-    
 }
 
 
